@@ -54,9 +54,9 @@
 
         raise_layer {
             bindings = <
-&none   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none   &bootloader  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
+&tog 4  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none   &bootloader  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none
 &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &none        &kp LEFT_ARROW     &kp DOWN_ARROW   &kp UP                &kp RIGHT             &none  &none
-&tog 4  &none           &msc SCRL_DOWN  &msc SCRL_UP     &none   &none        &none              &none            &none                 &none                 &none  &none
+&none   &none           &msc SCRL_DOWN  &msc SCRL_UP     &none   &none        &none              &none            &none                 &none                 &none  &none
                                         &trans           &trans  &trans       &trans             &trans           &trans
             >;
         };
