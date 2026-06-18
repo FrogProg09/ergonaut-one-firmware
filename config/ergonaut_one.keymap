@@ -44,10 +44,16 @@
         language: language {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT>;
+            bindings
+            = <¯o_press &kp LEFT_ALT>
+            , <¯o_press &kp LEFT_SHIFT>
+            , <¯o_pause_for_release>
+            , <¯o_release &kp LEFT_ALT>
+            , <¯o_release &kp LEFT_SHIFT>;
             label = "LANGUAGE";
         };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
